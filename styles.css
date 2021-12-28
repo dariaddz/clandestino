@@ -1,0 +1,110 @@
+:root {
+  color: #1a2e3b;
+}
+
+body {
+  /* color: #00adef;
+   */
+  background-color: #eff1f6;
+  color: #1a2e3b;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* font-family: Roboto, sans-serif; */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1a2e3b;
+}
+
+h2 {
+  margin-top: 20px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 20px 15px 30px 15px;
+}
+
+/* .project-container:nth-child(2n + 1) {
+  background-color: orange;
+} */
+
+table {
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table-caption {
+  margin-bottom: 5px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #1a2e3b;
+}
+
+h3 {
+  font-weight: 400;
+}
+/* vimeo business */
+
+.main-title {
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+}
+.project {
+  padding: 6px 15px;
+
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+
+  text-align: start;
+}
+.project:hover {
+  background-color: #e1e3e8;
+}
