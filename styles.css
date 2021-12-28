@@ -40,9 +40,9 @@ a {
   color: #1a2e3b;
 }
 
-h2 {
+/* h2 {
   margin-top: 20px;
-}
+} */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -120,4 +120,14 @@ h3 {
 }
 .project-link:hover {
   background-color: #e1e3e8;
+}
+
+.detailed-projects {
+  margin-top: 30px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
