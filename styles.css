@@ -1,18 +1,22 @@
+/* vimeo business */
 :root {
-  color: #1a2e3b;
+  --text-color: #1a2e3b;
+  --bcgr-color: #eff1f6;
+  --bcgr-color-light: #ffffff;
+  --accent-color: #00adef;
+  --accent-color-dark: #08c;
 }
 
 body {
-  /* color: #00adef;
-   */
-  background-color: #eff1f6;
-  color: #1a2e3b;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--bcgr-color);
+  color: var(--text-color);
 
-  /* font-family: Roboto, sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 
 h1,
@@ -37,23 +41,124 @@ img {
 
 a {
   text-decoration: none;
-  color: #1a2e3b;
+  color: inherit;
 }
 
-/* h2 {
-  margin-top: 20px;
-} */
 .container {
-  margin-left: auto;
+  margin-left: 50px;
   margin-right: auto;
   max-width: 1200px;
-  padding: 20px 15px 30px 15px;
+  padding: 0 15px 0 15px;
+}
+section {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-/* .project-container:nth-child(2n + 1) {
-  background-color: orange;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/* ----------main title--------- */
+.title-section {
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: linear-gradient(
+    180deg,
+    var(--accent-color-dark) 0%,
+    rgba(239, 241, 246, 0.2) 100%
+  );
+}
+.logo-title {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 25px;
+  text-align: center;
+  border: 1px solid var(--accent-color-dark);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.main-title {
+  margin-left: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* -------list of projects ------------- */
+.projects-list-section {
+  color: var(--text-color);
+}
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+}
+.project {
+  margin: 8px 5px;
+}
+
+.project-link {
+  padding: 6px 15px;
+
+  cursor: pointer;
+  border: 0px;
+  border-radius: 25px;
+  font-family: inherit;
+  font-weight: 500;
+
+  text-align: start;
+}
+.project-link:hover {
+  background-color: #e1e3e8;
+}
+/* --------projects in details-------------- */
+
+/* .detailed-projects {
+  margin-top: 30px;
 } */
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.project-section:nth-child(2n + 1) {
+  background-color: var(--bcgr-color-light);
+}
+.project-name {
+  margin-bottom: 20px;
+}
+/* media-links styles */
+.media-links {
+  display: flex;
+}
+
+.link-container:not(:last-child) {
+  margin-right: 10px;
+}
+
+.media-link {
+  background-color: var(--accent-color);
+  color: var(--bcgr-color);
+  padding: 5px 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.media-link:hover,
+.media-link:focus {
+  background-color: var(--accent-color-dark);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* ------table styles */
 table {
   border-collapse: collapse;
   margin-top: 15px;
@@ -67,67 +172,4 @@ table th,
 table td {
   padding: 10px;
   border: 1px solid #1a2e3b;
-}
-
-h3 {
-  font-weight: 400;
-}
-/* vimeo business */
-/* ----------main title--------- */
-.main-title {
-  font-size: 36px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-/* ----------list of projects--------------- */
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 250px;
-  height: 250px;
-}
-.project {
-  margin: 8px 5px;
-  /* padding: 6px 15px;
-
-  cursor: pointer;
-  border: 0px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 500;
-
-  text-align: start; */
-}
-
-.project-link {
-  padding: 6px 15px;
-
-  cursor: pointer;
-  border: 0px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 500;
-
-  text-align: start;
-}
-.project-link:hover {
-  background-color: #e1e3e8;
-}
-
-.detailed-projects {
-  margin-top: 30px;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
 }
